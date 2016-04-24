@@ -1,0 +1,61 @@
+<ion-view title="Claim Business" id="page14" style="background-color:#808080;">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <ion-list>
+                <label class="item item-input" name="busName">
+                    <input type="text" placeholder="Business Name">
+                </label>
+                <label class="item item-input" name="busAddress">
+                    <input type="text" placeholder="Address">
+                </label>
+                <label class="item item-input" name="busPhone">
+                    <input type="tel" placeholder="Phone Number">
+                </label>
+                <label class="item item-input" name="busEmail">
+                    <input type="email" placeholder="Email">
+                </label>
+                <label class="item item-input" name="busUser">
+                    <input type="text" placeholder="Username">
+                </label>
+                <label class="item item-input" name="busPass">
+                    <input type="password" placeholder="Password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="width: 285px; height: 13px;"></div>
+            <div>
+                <style>
+                    p {color:white;}
+                </style>
+                <p>
+                    <b>Does your business serve alcohol?</b>
+                </p>
+            </div>
+            <ion-toggle toggle-class="toggle-dark" name="busAlcohol">Alcohol</ion-toggle>
+        </form>
+        <div>
+            <style>
+                p {color:white;}
+            </style>
+            <p>
+                <b>Does your business serve food?</b>
+            </p>
+        </div>
+        <form class="list">
+            <ion-toggle toggle-class="toggle-dark" name="busFood">Food</ion-toggle>
+        </form>
+        <div>
+            <style>
+                p {color:white;}
+            </style>
+            <p>
+                <b>Does your business offer activitie?
+                    <br>For Example (arcade, pool, bowling, etc.)</b>
+            </p>
+        </div>
+        <form class="list">
+            <ion-toggle toggle-class="toggle-dark" name="busPlay">Play</ion-toggle>
+        </form>
+        <a ui-sref="tabsController.choice_tab7" id="claimBusiness-button21" class="button button-royal  button-block">Sign up</a>
+        <form class="list"></form>
+    </ion-content>
+</ion-view>

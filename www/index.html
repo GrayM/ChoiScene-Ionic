@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+    
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+    10 + 20 = {{ 10 + 20 }}
+  <div>
+    <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-stable">
+                <ion-nav-back-button></ion-nav-back-button>
+                <ion-nav-buttons side="right">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="right" id="side-menu21" style="background-color:#808080;">
+            <ion-header-bar class="bar-stable">
+                <div class="title">Menu</div>
+            </ion-header-bar>
+            <ion-content padding="true" class="side-menu-right has-header">
+                <form class="list" data-componentid="form10">
+                    <label class="item item-input" name="search" data-componentid="search2">
+                        <i class="icon ion-search placeholder-icon"></i>
+                        <input type="search" placeholder="search">
+                    </label>
+                    <ion-toggle toggle-class="toggle-dark" name="setNear" data-componentid="toggle4">Always Near You</ion-toggle>
+                </form>
+                <a ui-sref="tabsController.choiScene_tab7" menu-close="" id="menu-button19" class="button button-dark  button-block icon ion-ionic" data-componentid="button19">ChoiScene</a>
+                <a ui-sref="tabsController.home_tab5" menu-close="" id="menu-button20" class="button button-dark  button-block icon ion-ios-home" data-componentid="button20">Home</a>
+                <a ui-sref="tabsController.login" menu-close="" id="menu-button29" class="button button-dark  button-block icon ion-ios-contact" data-componentid="button29">Login</a>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</div>
+  </body>
+</html>
